@@ -5,6 +5,7 @@
     --grisclair: #f2f2f2;
     --bleu: #0065FC;
     --bleuclair: #DEEBFF;
+    --lien:0.1s color ease-in-out;
 }
 
 html{
@@ -19,14 +20,32 @@ html{
 body{
     font-family: 'Raleway', sans-serif;
     -webkit-backface-visibility: hidden;
-    font-style: normal;
     color: var(--noir);
     background-color: var(--grisclair);
-    padding: 0;
-    position: relative;
-    overflow-x: hidden;
     font-size:16px;
     font-weight: 400;
+}
+
+.responsive{
+    position:fixed;
+    width:30px;
+    height:30px;
+    left:10px;
+    bottom:10px;
+    border-radius:100%;
+}
+.responsive_desktop{background-color:red;display:block;}
+.responsive_tablette{background-color:green;display:none;}
+.responsive_mobile{background-color:blue;display:none;}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .responsive_desktop{display:none;}
+    .responsive_tablette{display:block;}
+    .responsive_mobile{display:none;}
+}
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .responsive_desktop{display:none;}
+    .responsive_tablette{display:none;}
+    .responsive_mobile{display:block;}
 }
 
 * {
