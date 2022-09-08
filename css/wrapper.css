@@ -253,3 +253,27 @@
         margin-bottom:32px;
         }
 }
+
+
+/* Liste des hébergements */
+#liste_hebergements{
+    background-color:#fff;
+    }
+    #liste_hebergements_wrapper{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        }
+        #liste_hebergements_globale{
+            width:calc(66.66% - 16px);
+            }
+        #liste_hebergements_populaire{
+            width:calc(33.33% - 16px);
+            }
+        #liste_hebergements_globale,
+        #liste_hebergements_populaire{
+            height:200px;
+            background-color:var(--grisclair);
+            border-radius: 15px;
+            padding:20px;
+        }
