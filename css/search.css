@@ -2,7 +2,6 @@
     background-color: #fff;
     padding-bottom:50px;
     }
-
     /* Formulaire de recherche */
     .search_destination_form{
         margin-top:10px;
@@ -50,10 +49,6 @@
             .search_destination_submit span{
                 display:inline;
                 }
-
-
-
-
     /* Filtres */
     .search_filter{
         padding:30px 0;
@@ -127,8 +122,6 @@
                 transform:translate(-50%,-50%);
                 font-size: 85%;
                 }
-
-
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     #search_destination{

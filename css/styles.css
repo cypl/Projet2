@@ -71,3 +71,25 @@ img {
     display: block;
 }
 
+.content_width{
+    width:95%;
+    max-width:1200px;
+    margin:auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .content_width{
+        width:90%;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .content_width{
+        width:90%;
+    }
+}
+
+.box_shadow{
+    box-shadow:0 0 10px #bbb;
+}
+.box_radius{
+    border-radius:15px;
+}
