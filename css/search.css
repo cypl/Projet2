@@ -103,6 +103,8 @@
                         }   
 
     .search_legend{
+        padding-left: 35px;
+        position: relative;
         }
         .search_legend_iconwrapper{
             position: relative;
@@ -112,7 +114,9 @@
             display: inline-block;
             width: 25px;
             height:25px;
-            vertical-align: -8px;
+            position: absolute;
+            left: 0;
+            top:3px;
             }
             .search_legend_iconwrapper i{
                 position: absolute;
