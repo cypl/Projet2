@@ -3,9 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Booki - Trouvez votre hébergement pour des vacances de rêves.</title>
+        <!-- Bloquer la possibilité de zoomer dans le viewport (mobile / tablette) -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bloquer la détection du téléphone, pour éviter les styles ajouter automatiquement par la machine -->
         <meta name="format-detection" content="telephone=no">
+        <!-- Bloquer l'indexation de la page par le robots, étant donné qu'elle est en ligne -->
         <meta name="robots" content="noindex, nofollow" />
+        <!-- Importation des feuilles de style et des fonts -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');</style>         
@@ -18,6 +22,8 @@
         <link rel="stylesheet" href="css/footer.css">
     </head>
     <body>
+
+        <!-- Header principal de la page -->
         <header id="main_header">
             <div id="main_header_wrapper">
                 <div id="main_header_brand">
@@ -34,8 +40,11 @@
                 </nav>
             </div>
         </header>
+
+        <!-- Contenu principal de la page -->
         <main>
 
+            <!-- Section pour la recherche d'une destination -->
             <section id="search_destination">
                 <div class="content_width">
                     <h1 class="search_destination_title">Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -48,8 +57,11 @@
                 </div>
             </section>
 
+            <!-- Section qui affiche les résulats de la recherche pour les hébergements -->
             <section id="liste_hebergements">
                 <div id="liste_hebergements_wrapper">
+                    
+                    <!-- La liste des hébergements populaires est placée en premier, afin de pouvoir s'aficher en premier sur la vue mobile. Sur la vue desktop, elle apparaît en premier grâce à l'utilisation de flexbox -->
                     <div id="liste_hebergements_populaire">
                         <div id="liste_hebergements_populaire_wrapper_mobile">
                             <h2 class="liste_hebergements_title">Les plus populaires<i class="fa-solid fa-star"></i></h2>
@@ -176,10 +188,12 @@
                 </div>
             </section>
 
+            <!-- Section qui affiche les résulats de la recherche pour les activités -->
             <section id="liste_activites">
                 <div class="content_width">
                     <h2 id="liste_activites_title">Activités à Marseille</h2>
                     <div id="liste_activites_wrapper">
+                        <!-- La liste des activités est divisée en 4 colonnes, une colonne peut contenir une ou plusieurs activités -->
                         <ul class="liste_activites_col">
                             <li class="excerpt_activites box_shadow box_radius">
                                 <a href="#" class="box_radius">
@@ -240,6 +254,8 @@
                 </div>
             </section>
         </main>
+
+        <!-- Footer principal de la page -->
         <footer id="main_footer">
             <div id="main_footer_wrapper" class="content_width">
                 <div class="main_footer_col">
