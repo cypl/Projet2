@@ -79,7 +79,7 @@
                 left:-2px;
                 top:-2px;
                 background-color:var(--bleuclair);
-                border-radius: 100%;
+                border-radius: 50%;
                 transition:0.15s background-color ease-in-out;
                 }
                 .search_filter_item_icon i{
