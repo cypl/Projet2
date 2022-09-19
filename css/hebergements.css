@@ -1,0 +1,216 @@
+/* Styles de la section hébergements */
+#list_lodging{
+    background-color:#fff;
+    }
+    #list_lodging_wrapper{
+        width:95%;
+        max-width:1200px;
+        margin:auto;
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction:row-reverse;
+        }
+        #list_lodging_global{
+            width:calc(66.66% - 16px);
+            }
+        #list_lodging_pop{
+            width:calc(33.33% - 16px);
+            }
+        #list_lodging_global,
+        #list_lodging_pop{
+            background-color:var(--grisclair);
+            border-radius: 15px;
+            padding:35px;
+            }
+
+        .list_lodging_title{
+            position: relative;
+            padding-right: 30px;
+            margin-bottom:20px;
+            }
+            .list_lodging_title i{
+                position: absolute;
+                right: 0;
+                font-size: 18px;
+                top: 4px;
+                }
+
+        #list_lodging_global_wrapper{
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            }
+            .excerpt_lodge{
+                background-color:#fff;
+                border:4px solid #fff;
+                margin-bottom:32px;
+                }
+            .excerpt_lodge_global{
+                width: calc(33.33% - 20px);
+                }
+                .excerpt_lodge_global_img{
+                    height:100px;
+                    border-radius:11px 11px 0 0;
+                    }
+                    .excerpt_lodge_global_img img{
+                        width:100%;
+                        height:100%;
+                        object-fit: cover;
+                        border-radius:11px 11px 0 0;
+                        }
+                .excerpt_lodge_global_info{
+                    padding:10px 10px 30px 10px;
+                    background-color: #fff;
+                    position: relative;
+                    height: calc(100% - 100px);
+                    }
+                    .excerpt_lodge a .excerpt_lodge_title{
+                        color:var(--noir);
+                        transition:var(--lien);
+                        }
+                        .excerpt_lodge a:hover .excerpt_lodge_title{
+                            color:var(--bleu);
+                            transition:var(--lien);
+                            }
+                    p.excerpt_lodge_global_price{
+                        line-height:1.4;
+                        padding:6px 0;
+                        }
+                    .excerpt_lodge_global_score{
+                        font-size:13px;
+                        position: absolute;
+                        bottom:5px;
+                        }
+                        /* .excerpt_lodge_global_score .starblue{color:var(--bleu);}                        
+                        .excerpt_lodge_global_score .stargrey{color:#d9d9d9;} */
+
+                        .excerpt_lodge_global_score.rated1 i:nth-child(1){color:var(--bleu);}
+                        .excerpt_lodge_global_score.rated1 i:nth-child(2),
+                        .excerpt_lodge_global_score.rated1 i:nth-child(3),
+                        .excerpt_lodge_global_score.rated1 i:nth-child(4),
+                        .excerpt_lodge_global_score.rated1 i:nth-child(5){color:#d9d9d9;}
+
+                        .excerpt_lodge_global_score.rated2 i:nth-child(1),
+                        .excerpt_lodge_global_score.rated2 i:nth-child(2){color:var(--bleu);}
+                        .excerpt_lodge_global_score.rated2 i:nth-child(3),
+                        .excerpt_lodge_global_score.rated2 i:nth-child(4),
+                        .excerpt_lodge_global_score.rated2 i:nth-child(5){color:#d9d9d9};
+
+                        .excerpt_lodge_global_score.rated3 i:nth-child(1),
+                        .excerpt_lodge_global_score.rated3 i:nth-child(2),
+                        .excerpt_lodge_global_score.rated3 i:nth-child(3){color:var(--bleu);}
+                        .excerpt_lodge_global_score.rated3 i:nth-child(4),
+                        .excerpt_lodge_global_score.rated3 i:nth-child(5){color:#d9d9d9;}
+
+                        .excerpt_lodge_global_score.rated4 i:nth-child(1),
+                        .excerpt_lodge_global_score.rated4 i:nth-child(2),
+                        .excerpt_lodge_global_score.rated4 i:nth-child(3),
+                        .excerpt_lodge_global_score.rated4 i:nth-child(4){color:var(--bleu);}
+                        .excerpt_lodge_global_score.rated4 i:nth-child(5){color:#d9d9d9;}
+
+                        .excerpt_lodge_global_score.rated5 i{color:var(--bleu);}
+
+
+        .excerpt_lodge_global_showmore{
+            font-size:15px;
+            }
+            .excerpt_lodge_global_showmore a{
+                font-weight:700;
+                color:var(--noir);
+                transition:var(--lien);
+                }
+                .excerpt_lodge_global_showmore a:hover{
+                    color:var(--bleu);
+                    transition:var(--lien);
+                    }
+            
+        .excerpt_lodge_pop a{
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            }
+            .excerpt_lodge_pop:last-child{margin-bottom:0;}
+            .excerpt_lodge_pop_img{
+                height:135px;
+                /* width:115px; */
+                width:35%;
+                border-radius:11px 0 0 11px;
+                }
+                .excerpt_lodge_pop_img img{
+                    width:100%;
+                    height:100%;
+                    object-fit: cover;
+                    border-radius:11px 0 0 11px;
+                    }
+            .excerpt_lodge_pop .excerpt_lodge_pop_info{
+                /* width:calc(100% - 115px); */
+                width:65%;
+                position: relative;
+                padding:8px 8px 0 12px;
+                }
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #list_lodging_wrapper{
+        display:block;
+        width:90%;
+        }
+        #list_lodging_global{
+            width:100%;
+            }
+            .excerpt_lodge_global{
+                width:calc(50% - 16px);
+                }
+                .excerpt_lodge_global_img {
+                    height: 165px;
+                    }
+                .excerpt_lodge_global_info{
+                    height: calc(100% - 165px);
+                    }
+        #list_lodging_pop{
+            width:100%;
+            margin-bottom:32px;
+            }
+            
+}
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    #list_lodging_wrapper{
+        display:block;
+        width:100%;
+        }
+        #list_lodging_global,
+        #list_lodging_pop{
+            background-color:var(--grisclair);
+            border-radius: 0;
+            padding:35px 0px;
+        }
+        #list_lodging_global{
+            width:100%;
+            background-color: #fff;
+            padding-bottom:0;
+            }
+        #list_lodging_pop{
+            width:100%;
+            }
+            #list_lodging_pop_wrapper_mobile,
+            #list_lodging_global_wrapper_mobile{
+                    width:90%;
+                    margin:auto;
+                }
+            
+
+    #list_lodging_global_wrapper{
+        display:block;
+        }
+        .excerpt_lodge {
+            margin-bottom: 20px;
+            }
+        .excerpt_lodge_global{
+            width: 100%;
+            }
+            .excerpt_lodge_global_img{
+                height:210px;
+                border-radius:11px 11px 0 0;
+                }
+}

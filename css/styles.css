@@ -454,8 +454,33 @@ p {
                         position: absolute;
                         bottom:5px;
                         }
-                        .excerpt_lodge_global_score .starblue{color:var(--bleu);}                        
-                        .excerpt_lodge_global_score .stargrey{color:#d9d9d9;}
+                        /* .excerpt_lodge_global_score .starblue{color:var(--bleu);}                        
+                        .excerpt_lodge_global_score .stargrey{color:#d9d9d9;} */
+                        .excerpt_lodge_global_score.rated1 i:nth-child(1){color:var(--bleu);}
+                        .excerpt_lodge_global_score.rated1 i:nth-child(2),
+                        .excerpt_lodge_global_score.rated1 i:nth-child(3),
+                        .excerpt_lodge_global_score.rated1 i:nth-child(4),
+                        .excerpt_lodge_global_score.rated1 i:nth-child(5){color:#d9d9d9;}
+
+                        .excerpt_lodge_global_score.rated2 i:nth-child(1),
+                        .excerpt_lodge_global_score.rated2 i:nth-child(2){color:var(--bleu);}
+                        .excerpt_lodge_global_score.rated2 i:nth-child(3),
+                        .excerpt_lodge_global_score.rated2 i:nth-child(4),
+                        .excerpt_lodge_global_score.rated2 i:nth-child(5){color:#d9d9d9}
+
+                        .excerpt_lodge_global_score.rated3 i:nth-child(1),
+                        .excerpt_lodge_global_score.rated3 i:nth-child(2),
+                        .excerpt_lodge_global_score.rated3 i:nth-child(3){color:var(--bleu);}
+                        .excerpt_lodge_global_score.rated3 i:nth-child(4),
+                        .excerpt_lodge_global_score.rated3 i:nth-child(5){color:#d9d9d9;}
+
+                        .excerpt_lodge_global_score.rated4 i:nth-child(1),
+                        .excerpt_lodge_global_score.rated4 i:nth-child(2),
+                        .excerpt_lodge_global_score.rated4 i:nth-child(3),
+                        .excerpt_lodge_global_score.rated4 i:nth-child(4){color:var(--bleu);}
+                        .excerpt_lodge_global_score.rated4 i:nth-child(5){color:#d9d9d9;}
+
+                        .excerpt_lodge_global_score.rated5 i{color:var(--bleu);}
         .excerpt_lodge_global_showmore{
             font-size:15px;
             }
