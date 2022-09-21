@@ -1,4 +1,4 @@
-/* Import de la Google Font */
+/* Import de la Google Font - pour éviter d'attendre le chargement du fichier, c'est processus non bloquant à l'affichage de la page */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');      
 
 /* Variables de couleurs du site */
@@ -13,7 +13,6 @@
 
 /* Styles de base */
 html{
-    -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     -webkit-appearance: none;
@@ -47,7 +46,6 @@ figure {
 img {
     width: 100%;
     height: auto;
-    vertical-align: middle;
     display: block;
 }
 
@@ -56,16 +54,12 @@ img {
     max-width:1200px;
     margin:auto;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     .content_width{
         width:90%;
     }
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
-    .content_width{
-        width:90%;
-    }
-}
+
 
 .box_shadow{
     box-shadow:0 0 10px #bbb;
@@ -164,7 +158,7 @@ p {
                             transition:0.1s color ease-in-out, 0.1s border-color ease-in-out;
                             }
 
-@media only screen and (min-width: 0px) and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     #main_header_wrapper{
         display:inherit;
         width:100%;
@@ -329,7 +323,7 @@ p {
                 font-size: 85%;
                 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     .search_filter{
         padding:35px 0 35px 0;
     }
@@ -344,20 +338,7 @@ p {
         margin: 10px 10px 0px 0px;
     }
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
-    .search_filter{
-        padding:35px 0 35px 0;
-    }
-    #search_destination{
-        padding-top:35px;
-        padding-bottom:35px;
-    }
-    .search_filter_label{
-        display:block;
-    }
-    .search_filter_item{
-        margin: 10px 10px 0px 0px;
-    }
+@media only screen and (max-width: 768px) {
     .search_destination_input{
         width:180px;
     }
@@ -454,32 +435,31 @@ p {
                         position: absolute;
                         bottom:5px;
                         }
-                        /* .excerpt_lodge_global_score .starblue{color:var(--bleu);}                        
-                        .excerpt_lodge_global_score .stargrey{color:#d9d9d9;} */
+                        /* Noté 1 étoile */
                         .excerpt_lodge_global_score.rated1 i:nth-child(1){color:var(--bleu);}
                         .excerpt_lodge_global_score.rated1 i:nth-child(2),
                         .excerpt_lodge_global_score.rated1 i:nth-child(3),
                         .excerpt_lodge_global_score.rated1 i:nth-child(4),
                         .excerpt_lodge_global_score.rated1 i:nth-child(5){color:#d9d9d9;}
-
+                        /* Noté 2 étoiles */
                         .excerpt_lodge_global_score.rated2 i:nth-child(1),
                         .excerpt_lodge_global_score.rated2 i:nth-child(2){color:var(--bleu);}
                         .excerpt_lodge_global_score.rated2 i:nth-child(3),
                         .excerpt_lodge_global_score.rated2 i:nth-child(4),
                         .excerpt_lodge_global_score.rated2 i:nth-child(5){color:#d9d9d9}
-
+                        /* Noté 3 étoiles */
                         .excerpt_lodge_global_score.rated3 i:nth-child(1),
                         .excerpt_lodge_global_score.rated3 i:nth-child(2),
                         .excerpt_lodge_global_score.rated3 i:nth-child(3){color:var(--bleu);}
                         .excerpt_lodge_global_score.rated3 i:nth-child(4),
                         .excerpt_lodge_global_score.rated3 i:nth-child(5){color:#d9d9d9;}
-
+                        /* Noté 4 étoiles */
                         .excerpt_lodge_global_score.rated4 i:nth-child(1),
                         .excerpt_lodge_global_score.rated4 i:nth-child(2),
                         .excerpt_lodge_global_score.rated4 i:nth-child(3),
                         .excerpt_lodge_global_score.rated4 i:nth-child(4){color:var(--bleu);}
                         .excerpt_lodge_global_score.rated4 i:nth-child(5){color:#d9d9d9;}
-
+                        /* Noté 5 étoiles */
                         .excerpt_lodge_global_score.rated5 i{color:var(--bleu);}
         .excerpt_lodge_global_showmore{
             font-size:15px;
@@ -502,7 +482,6 @@ p {
             .excerpt_lodge_pop:last-child{margin-bottom:0;}
             .excerpt_lodge_pop_img{
                 height:135px;
-                /* width:115px; */
                 width:35%;
                 border-radius:11px 0 0 11px;
                 }
@@ -513,14 +492,13 @@ p {
                     border-radius:11px 0 0 11px;
                     }
             .excerpt_lodge_pop .excerpt_lodge_pop_info{
-                /* width:calc(100% - 115px); */
                 width:65%;
                 position: relative;
                 padding:8px 8px 0 12px;
                 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     #list_lodging_wrapper{
         display:block;
         width:90%;
@@ -543,9 +521,8 @@ p {
             }
             
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     #list_lodging_wrapper{
-        display:block;
         width:100%;
         }
         #list_lodging_global,
@@ -555,12 +532,10 @@ p {
             padding:35px 0px;
         }
         #list_lodging_global{
-            width:100%;
             background-color: #fff;
             padding-bottom:0;
             }
         #list_lodging_pop{
-            width:100%;
             }
             #list_lodging_pop_wrapper_mobile,
             #list_lodging_global_wrapper_mobile{
@@ -651,7 +626,7 @@ p {
                     height:calc(54% - 16px);
                     }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     .list_activities_col{
         width:calc(50% - 16px);
         height:450px;
@@ -667,7 +642,7 @@ p {
         height:calc(50% - 16px);
         }
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     #list_activities_wrapper{
         display:block;
         }
@@ -719,7 +694,7 @@ p {
                     color:var(--bleu);
                     transition:var(--lien);
                     }  
-@media only screen and (min-width: 0px) and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     #main_footer_wrapper{
         display:block;
         }
